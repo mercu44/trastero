@@ -1,4 +1,5 @@
 /* General Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,52 +8,34 @@ body {
     color: #333;
 }
 
-/* Header Styles */
-header {
-    background-color: #ff6600;
-    padding: 1rem;
-    color: #fff;
-    text-align: center;
-}
-
 /* Encabezado principal con imagen de fondo */
 #header {
     background: url('./assets/images/inicial.png') no-repeat center center/cover;
     height: 100vh; /* Toda la altura de la ventana */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
     position: relative;
+    color: #fff;
+    text-align: center;
 }
 
-.header-content {
-    z-index: 2; /* Asegura que el contenido esté encima del fondo */
-}
-
-.header-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Mejora la visibilidad del texto */
-}
-
-/* Barra de navegación */
+/* Índice en la parte superior */
 .nav {
-    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Fondo sólido */
+    padding: 0.5rem 0;
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Para adaptarse mejor en móviles */
+    z-index: 10;
 }
 
 .nav-list {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
-    gap: 1.5rem; /* Más separación entre los elementos */
+    gap: 1.5rem; /* Separación entre enlaces */
 }
 
 .nav-link {
@@ -60,16 +43,34 @@ header {
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     padding: 10px 20px;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
-    background: rgba(255, 102, 0, 0.8);
-    color: #333;
+    background: #ff6600;
+    color: #fff;
 }
+
+/* Contenedor del título centrado */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+/* Título */
+.header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Mejora la visibilidad */
+}
+
 
 /* Section Styles */
 .section {
