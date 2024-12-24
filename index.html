@@ -4,31 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta y Alquiler de Trasteros</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .section {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Navegación -->
     <header id="header">
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#explicacion" class="nav-link">Explicación</a></li>
-                <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1 class="header-title">Venta y Alquiler de Trasteros</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#explicacion" class="nav-link">Explicación</a></li>
+                    <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
 
     <!-- Explicación -->
     <section id="explicacion" class="section">
@@ -89,23 +81,6 @@
         <p class="footer-text">&copy; 2024 Venta y Alquiler de Trasteros. Todos los derechos reservados.</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const sections = document.querySelectorAll(".section");
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            sections.forEach((section) => {
-                observer.observe(section);
-            });
-        });
-    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
