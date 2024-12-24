@@ -243,3 +243,65 @@ body {
         padding: 1rem;
     }
 }
+
+/* Botones flotantes */
+.floating-buttons {
+    position: fixed;
+    bottom: 0; /* Siempre en la parte inferior */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Fondo oscuro */
+    display: flex;
+    justify-content: space-around; /* Espaciado uniforme entre botones */
+    align-items: center;
+    padding: 0.5rem 0;
+    z-index: 100;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ff6600; /* Naranja por defecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.floating-button:hover {
+    background-color: #333; /* Cambia el fondo al pasar el cursor */
+    color: #ff6600;
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+/* Botón específico: Llamar */
+.call-button {
+    background-color: #34c759; /* Verde para llamadas */
+}
+
+.call-button:hover {
+    background-color: #28a745;
+}
+
+/* Botón específico: WhatsApp */
+.whatsapp-button {
+    background-color: #25d366; /* Color de WhatsApp */
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+}
+
+/* Botón específico: Correo */
+.email-button {
+    background-color: #007bff; /* Azul para correo */
+}
+
+.email-button:hover {
+    background-color: #0056b3;
+}
