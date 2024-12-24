@@ -1,5 +1,4 @@
 /* General Styles */
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -66,7 +65,7 @@ body {
 
 /* Título */
 .header-title {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: bold;
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Mejora la visibilidad */
@@ -247,30 +246,30 @@ body {
 /* Botones flotantes */
 .floating-buttons {
     position: fixed;
-    bottom: 0; /* Siempre en la parte inferior */
+    bottom: 1rem; /* Se separan un poco del borde inferior */
     left: 0;
     width: 100%;
-    background-color: #333; /* Fondo oscuro */
     display: flex;
     justify-content: space-around; /* Espaciado uniforme entre botones */
     align-items: center;
-    padding: 0.5rem 0;
     z-index: 100;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos generales para los botones redondos */
 .floating-button {
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
+    width: 60px; /* Tamaño igual en ancho y alto para que sea un círculo */
+    height: 60px;
+    border-radius: 50%; /* Hace los botones redondos */
     background-color: #ff6600; /* Naranja por defecto */
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    transition: background 0.3s, transform 0.3s;
 }
 
 .floating-button:hover {
