@@ -19,15 +19,16 @@ body {
 
 /* Índice en la parte superior */
 .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: #333; /* Fondo sólido */
-    padding: 0.5rem 0;
+    padding: 0.75rem 1rem;
     display: flex;
     justify-content: center;
-    gap: 20px;
     z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade sombra para resaltar */
 }
 
 .nav-list {
@@ -56,8 +57,8 @@ body {
 /* Contenedor del título centrado */
 .header-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
@@ -65,7 +66,7 @@ body {
 
 /* Título */
 .header-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Mejora la visibilidad */
@@ -74,7 +75,7 @@ body {
 
 /* Section Styles */
 .section {
-    padding: 2rem;
+    padding: 3rem 2rem;
     text-align: center;
 }
 
@@ -101,11 +102,12 @@ body {
 
 .gallery-img {
     max-width: 100%;
-    width: 300px; /* Tamaño más grande */
-    height: auto; /* Mantener la proporción */
+    width: 250px;
+    height: auto;
     object-fit: cover;
     border: 2px solid #ccc;
     transition: transform 0.3s, border-color 0.3s;
+    border-radius: 10px;
 }
 
 .gallery-img:hover {
@@ -117,7 +119,7 @@ body {
 .features-list {
     list-style: none;
     padding: 0;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     text-align: left;
     max-width: 600px;
     margin: 1rem auto;
@@ -125,7 +127,7 @@ body {
 
 .features-list li {
     margin: 0.5rem 0;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     background-color: #fff;
     border-left: 5px solid #ff6600;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -151,7 +153,7 @@ body {
 /* Form Styles */
 .contact-form {
     max-width: 600px;
-    margin: 1rem auto;
+    margin: 2rem auto;
     text-align: left;
     background-color: #fff;
     padding: 1.5rem;
@@ -212,11 +214,21 @@ body {
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
-        gap: 1rem; /* Más espacio entre elementos en móviles */
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .header-title {
+        font-size: 2rem;
     }
 
     .gallery-img {
-        width: 90%; /* Las imágenes ocuparán más espacio en pantallas pequeñas */
+        width: 90%; /* Ajusta las imágenes para pantallas pequeñas */
     }
 
     .section-title {
