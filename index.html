@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta y Alquiler de Trasteros</title>
+    <meta name="description" content="Venta, alquiler y alquiler con opción a compra de trasteros en Zaragoza. Espacios amplios, seguros y accesibles en Torres San Lamberto. ¡Contáctanos!">
+    <meta name="keywords" content="trasteros en Zaragoza, venta de trasteros, alquiler de trasteros, Torres San Lamberto">
+    <meta name="author" content="trasterossanlamberto">
+    <meta property="og:title" content="Venta y Alquiler de Trasteros en Zaragoza - Torres San Lamberto">
+    <meta property="og:description" content="Trasteros amplios y seguros en Zaragoza. ¡Contáctanos!">
+    <meta property="og:image" content="https://www.trasterossanlamberto.com/images/trastero.png">
+    <meta property="og:url" content="https://www.trasterossanlamberto.com">
+    <meta property="og:type" content="website">
+    <title>Venta y Alquiler de Trasteros en Zaragoza - Torres San Lamberto</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
@@ -62,23 +70,24 @@
         </div>
     </section>
 
-    <!-- Contacto -->
     <section id="contacto" class="section">
         <h2 class="section-title">Contacto</h2>
         <p class="section-text">¿Tienes dudas? Escríbenos a través del siguiente formulario:</p>
-        <form action="#" method="post" class="contact-form" id="contact-form">
+        <form id="contact-form">
             <label for="nombre" class="form-label">Nombre:</label>
             <input type="text" id="nombre" name="nombre" class="form-input" required>
-
+    
             <label for="correo" class="form-label">Correo electrónico:</label>
             <input type="email" id="correo" name="correo" class="form-input" required>
-
+    
             <label for="consulta" class="form-label">Consulta:</label>
             <textarea id="consulta" name="consulta" class="form-textarea" rows="5" required></textarea>
-
+    
             <button type="submit" class="form-button">Enviar</button>
         </form>
     </section>
+    
+
 
     <!-- Footer -->
     <footer id="footer" class="footer">
@@ -98,7 +107,7 @@
         </a>
     </div>
 
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
