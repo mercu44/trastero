@@ -23,9 +23,11 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     }).then(
         function(response) {
             alert("Correo enviado con éxito.");
+            console.log("SUCCESS!", response.status, response.text);
         },
         function(error) {
-            alert("Error al enviar el correo");
+            alert("Error al enviar el correo. Revisa la consola para más detalles.");
+            console.error("Error al enviar el correo:", error);
         }
         
     );
