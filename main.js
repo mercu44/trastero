@@ -12,7 +12,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     const consulta = document.getElementById("consulta").value;
 
     // Configura los parámetros para EmailJS
-    const serviceID = "service_13cd9vj"; // Reemplaza con tu Service ID de EmailJS
+    const serviceID = "service_pmz15ue"; // Reemplaza con tu Service ID de EmailJS
     const templateID = "template_vu2kz87"; // Reemplaza con tu Template ID de EmailJS
 
     // Envía el correo usando EmailJS
@@ -23,11 +23,10 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     }).then(
         function(response) {
             alert("Correo enviado con éxito.");
-            console.log("SUCCESS!", response.status, response.text);
         },
         function(error) {
-            alert("Error al enviar el correo.");
-            console.error("FAILED...", error);
+            alert("Error al enviar el correo");
         }
+        
     );
 });
