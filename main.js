@@ -24,6 +24,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         function(response) {
             alert("Correo enviado con éxito.");
             console.log("SUCCESS!", response.status, response.text);
+            document.getElementById("contact-form").reset(); // Resetea el formulario
         },
         function(error) {
             alert("Error al enviar el correo. Revisa la consola para más detalles.");
